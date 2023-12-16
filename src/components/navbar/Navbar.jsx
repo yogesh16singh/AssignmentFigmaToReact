@@ -8,7 +8,7 @@ import Logo from "../../assets/logo.png";
 import "./navbar.css";
 const Navbar = () => {
   return (
-    <div className="Navbar">
+    <div className="Navbar hidden lg:flex">
       <div className="nav-top">
         <img src={Logo} alt="" />
         <div className="dash"></div>

@@ -6,9 +6,11 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.03));
   padding: 10px 0px 10px 0px;
 }
-.Records.open{
+
+.Records.open {
   width: calc(100vw - 440px);
 }
+
 .recordsHeader {
   display: flex;
   justify-content: space-between;
@@ -16,11 +18,13 @@
   margin-bottom: 5px;
   padding: 0px 20px 0px 5px;
 }
+
 .left-header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
+
 .lh-in {
   padding: 10px 5px 10px 5px;
   margin-left: 1.5rem;
@@ -30,8 +34,10 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 142.857% */
+  line-height: 20px;
+  /* 142.857% */
 }
+
 .active {
   font-size: 14px;
   font-style: normal;
@@ -39,6 +45,7 @@
   line-height: 20px;
   border-bottom: 3px solid rgba(70, 8, 193, 0.719);
 }
+
 .num {
   background: rgba(131, 48, 233, 0.2);
   padding: 1px 4px 1px 4px;
@@ -48,22 +55,23 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 142.857% */
+  line-height: 20px;
+  /* 142.857% */
 }
+
 .right-header {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .addnew {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 100px;
-  background: var(
-    --Gradient-1,
-    linear-gradient(90deg, #464feb 10.42%, #8330e9 100%)
-  );
+  background: var(--Gradient-1,
+      linear-gradient(90deg, #464feb 10.42%, #8330e9 100%));
   color: white;
   padding: 7px 10px;
   font-size: 13px;
@@ -74,9 +82,11 @@
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.12),
     0px 4px 8px 0px rgba(0, 0, 0, 0.14);
 }
-.addnew > img {
+
+.addnew>img {
   margin-right: 2px;
 }
+
 .records-searchbar {
   display: flex;
   justify-content: center;
@@ -84,6 +94,7 @@
   margin-left: -17px;
   margin-right: 15px;
 }
+
 .recordsdash {
   width: 32px;
   height: 1px;
@@ -91,7 +102,8 @@
   background-color: black;
   opacity: 0.2;
 }
-.records-searchbar > input {
+
+.records-searchbar>input {
   width: 193px;
   height: 32px;
   flex-shrink: 0;
@@ -107,22 +119,23 @@
   justify-content: center;
   align-items: center;
 }
-.records-searchbar > input:focus {
+
+.records-searchbar>input:focus {
   border: 0;
   outline: 0;
 }
+
 .recordsSearch {
   left: 28px;
   position: relative;
 }
+
 .filter-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(
-    --Gradient-1,
-    linear-gradient(90deg, #464feb 10.42%, #8330e9 100%)
-  );
+  background: var(--Gradient-1,
+      linear-gradient(90deg, #464feb 10.42%, #8330e9 100%));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -132,9 +145,11 @@
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.12),
     0px 4px 8px 0px rgba(0, 0, 0, 0.14);
 }
+
 .funnel {
   margin-right: 2px;
 }
+
 .dropdown {
   margin-left: 4px;
 }
@@ -148,6 +163,7 @@
   font-weight: 400;
   line-height: 20px;
 }
+
 .recordsTable thead {
   background-color: #f8f8f8;
   font-size: 13px;
@@ -155,20 +171,26 @@
   font-weight: 700;
   line-height: 20px;
 }
+
 tr {
-  border-top: 1px solid rgba(0, 0, 0, 0.1); /* Top border style */
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Bottom border style */
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  /* Top border style */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  /* Bottom border style */
 }
-.recordsTable th:nth-child(2) > .trainee {
+
+.recordsTable th:nth-child(2)>.trainee {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.recordsTable th:nth-child(1) > .head-checkbox {
+
+.recordsTable th:nth-child(1)>.head-checkbox {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 input[type="checkbox"] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -183,6 +205,7 @@ input[type="checkbox"] {
   border-radius: 6px;
   background-color: #ffffff;
   border-radius: 50px;
+
   &:checked {
     background-color: rgba(70, 8, 193, 0.719);
   }
@@ -191,32 +214,39 @@ input[type="checkbox"] {
     outline: none !important;
   }
 }
-.recordsTable td:nth-child(1) > .checkbox {
+
+.recordsTable td:nth-child(1)>.checkbox {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.recordsTable td:nth-child(2) > .user-name {
+
+.recordsTable td:nth-child(2)>.user-name {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.recordsTable td:nth-child(2) > .user-name > img {
+
+.recordsTable td:nth-child(2)>.user-name>img {
   margin-right: 8px;
 }
-.recordsTable td:nth-child(10) > .actions > img:nth-child(1) {
+
+.recordsTable td:nth-child(10)>.actions>img:nth-child(1) {
   margin-right: 10px;
 }
+
 .recordsTable .compliance {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .recordsTable .last-workout {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .recordsTable .workout-plan {
   display: flex;
   justify-content: center;
@@ -224,11 +254,13 @@ input[type="checkbox"] {
   background-color: #eff4ff;
   color: #556ee6;
 }
+
 .recordsTable .last-modified {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .recordsTable .diet-plan {
   display: flex;
   justify-content: center;
@@ -236,11 +268,13 @@ input[type="checkbox"] {
   background-color: #e7f6eb;
   color: #09a033;
 }
+
 .recordsTable .trainer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .recordsTable .actions {
   display: flex;
   justify-content: center;

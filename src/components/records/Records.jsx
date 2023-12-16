@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import DropDown from "../../assets/DropDown.png";
+import DropDown from "../../assets/Dropdown.png";
 import Filter from "../../assets/Funnel.png";
 import AddNew from "../../assets/AddNew.png";
 import Search from "../../assets/Records-Search.png";
@@ -8,17 +8,17 @@ import RecordsUser from "../../assets/User-sm.png";
 import RecordsChat from "../../assets/recordsChat.png";
 import Options from "../../assets/options.png";
 import "./records.css";
-const Records = (props) => {
+const Records = () => {
   const [dataArray, setDataArray] = useState([
     {
       trainee: "Rahul Last Name",
       compliance: "44.5%",
       lastWorkout: "Jun 10th' 23",
       workoutPlan: "Plan 2 - Beginner",
-      // lastModified: " Jun 10th' 23",
-      // dietPlan: "Plan 2 - Beginner",
-      // lastModifiedDp: "Jun 10th' 23",
-      // trainer: "Tim Deboar",
+      lastModified: " Jun 10th' 23",
+      dietPlan: "Plan 2 - Beginner",
+      lastModifiedDp: "Jun 10th' 23",
+      trainer: "Tim Deboar",
       actions: "",
     },
   ]);
@@ -28,16 +28,16 @@ const Records = (props) => {
       compliance: "44.5%",
       lastWorkout: "Jun 10th' 23",
       workoutPlan: "Plan 2 - Beginner",
-      // lastModified: " Jun 10th' 23",
-      // dietPlan: "Plan 2 - Beginner",
-      // lastModifiedDp: "Jun 10th' 23",
-      // trainer: "Tim Deboar",
+      lastModified: " Jun 10th' 23",
+      dietPlan: "Plan 2 - Beginner",
+      lastModifiedDp: "Jun 10th' 23",
+      trainer: "Tim Deboar",
       actions: "",
     };
     setDataArray([...dataArray, data]);
   };
   return (
-    <div className={`Records ${props.show ? "open" : ""}`}>
+    <div className={`Records `}>
       <div className="recordsHeader">
         <div className="left-header">
           <button className="active lh-in">
@@ -84,54 +84,14 @@ const Records = (props) => {
             <th>Compliance</th>
             <th>Last Workout</th>
             <th>Workout Plan</th>
-            {/* <th>Last Modified</th>
+            <th>Last Modified</th>
             <th>Diet Plan</th>
             <th>Last Modified</th>
-            <th>Trainer</th> */}
+            <th>Trainer</th>
             <th>Actions</th>
           </tr>
         </thead>
         <tbody>
-          {/* <tr style={{ height: "43px" }} className="data-row">
-            <td>
-              <div className="checkbox">
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div className="user-name">
-                <img src={RecordsUser} alt="" />
-                <span>Rahul Last Name</span>
-              </div>
-            </td>
-            <td>
-              <div className="compliance">44.5%</div>
-            </td>
-            <td>
-              <div className="last-workout">Jun 10th' 23</div>
-            </td>
-            <td>
-              <div className="workout-plan">Plan 2 - Beginner</div>
-            </td>
-            <td>
-              <div className="last-modified">Jun 10th' 23</div>
-            </td>
-            <td>
-              <div className="diet-plan">Plan 2 - Beginner</div>
-            </td>
-            <td>
-              <div className="last-modified">Jun 10th' 23</div>
-            </td>
-            <td>
-              <div className="trainer">Tim Deboar</div>
-            </td>
-            <td>
-              <div className="actions">
-                <img src={RecordsChat} alt="" />
-                <img src={Options} alt="" />
-              </div>
-            </td>
-          </tr> */}
           {dataArray.map((data, index) => {
             return (
               <tr key={index} style={{ height: "43px" }} className="data-row">
@@ -155,18 +115,18 @@ const Records = (props) => {
                 <td>
                   <div className="workout-plan">{data.workoutPlan}</div>
                 </td>
-                {/* <td>
+                <td>
                   <div className="last-modified">{data.lastModified}</div>
-                </td> */}
-                {/* <td>
+                </td>
+                <td>
                   <div className="diet-plan">{data.dietPlan}</div>
-                </td> */}
-                {/* <td>
+                </td>
+                <td>
                   <div className="last-modified">{data.lastModifiedDp}</div>
-                </td> */}
-                {/* <td>
+                </td>
+                <td>
                   <div className="trainer">{data.trainer}</div>
-                </td> */}
+                </td>
                 <td>
                   <div className="actions">
                     <img src={RecordsChat} alt="" />
