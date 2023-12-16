@@ -1,0 +1,30 @@
+.Navbar {
+  width: 96px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+  align-items: center;
+  padding: 10px 0px 20px 0px;
+  border-radius: 0 0 20px 0;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.03));
+}
+.dash {
+  width: 70px;
+  height: 1px;
+  background-color: black;
+  opacity: 0.2;
+  margin: 10px 0px 25px 0px;
+}
+.nav-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    margin-bottom: 2.8rem;
+}
+img{
+    cursor: pointer;
+}
