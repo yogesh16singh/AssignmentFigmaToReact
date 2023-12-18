@@ -22,6 +22,20 @@ const Records = () => {
       actions: "",
     },
   ]);
+  const [name, setName] = useState();
+  const [display, setDisplay] = useState();
+
+  const updatename = (data, index) => {
+    setDisplay(index);
+    setName(data.trainee);
+  }
+  const handleSubmit = (index) => {
+    let updatedarray = [...dataArray];
+    updatedarray[index] = { ...updatedarray[index], trainee: name };
+    setDataArray(updatedarray);
+    setDisplay(-1);
+  }
+
   const addData = () => {
     let data = {
       trainee: "Rahul Last Name",
@@ -103,7 +117,14 @@ const Records = () => {
                 <td>
                   <div className="user-name">
                     <img src={RecordsUser} alt="" />
-                    <span>{data.trainee}</span>
+                    {(display != index) &&
+                      <span onDoubleClick={() => { updatename(data, index) }}>{data.trainee}</span>}
+                    {(display == index) && (
+                      <div className="flex">
+                        <input value={name} onChange={(e) => setName(e.target.value)} placeholder="enter"></input>
+                        <button className="rounded-2 border-2" onClick={() => handleSubmit(index)}>submit</button>
+                      </div>
+                    )}
                   </div>
                 </td>
                 <td>
